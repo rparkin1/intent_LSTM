@@ -102,3 +102,8 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# project
+.idea/
+vocab/*
+.DS_Store/
