@@ -35,9 +35,9 @@ It writes them to a vocab folder.
 
 ## Best Results
 
-Test:
-Slot F1: 96.5
-intent accuracy: 96.2
-semantic error: 86.2
+Test: <br>
+Slot F1: 96.5 <br>
+intent accuracy: 96.2 <br>
+semantic error: 86.2 <br>
 
 For comparison see the Carnegie Mellon paper: https://arxiv.org/pdf/1609.01454.pdf
