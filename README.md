@@ -1,5 +1,5 @@
 # Intent Model
-Bi-directional LSTM with attention for intent detection and entity filling
+Bi-directional LSTM with attention for intent detection and entity slot filling
 
 ## Requirements
 tensorflow 1.4 <br>
@@ -31,3 +31,13 @@ It writes them to a vocab folder.
 
 * run with 64 nodes on atis data with early stopping disabled and using only intent attention: <br>
 &emsp;python3 train.py --no_early_stop --dataset=snips --model_type=intent_only
+
+
+## Best Results
+
+Test:
+Slot F1: 96.5
+intent accuracy: 96.2
+semantic error: 86.2
+
+For comparison see the Carnegie Mellon paper: https://arxiv.org/pdf/1609.01454.pdf
