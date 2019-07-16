@@ -8,7 +8,7 @@ python 3.5
 
 ## How does it work?
 The model needs 3 input files:
-* label - contains the label for the utterance
+* label - contains the intent label for the utterance
 * seq.in - contains the utterance itself
 * seq.out - contains the ground truth mapping for the utterance; you will see the nouns replaced by the entity labels
 
@@ -35,7 +35,9 @@ It writes them to a vocab folder.
 
 ## Best Results
 
-Test: <br>
+
+
+Test data set: <br>
 Slot F1: 96.5 <br>
 intent accuracy: 96.2 <br>
 semantic error: 86.2 <br>
