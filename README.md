@@ -21,6 +21,7 @@ optimization problem. The default setting solves the joint problem with attentio
 The --model_type option lets you run it with attention only on intent.
 
 The code takes in the input data and create dictionaries for both intent and entity labels based on seq.out file
+It writes them to a vocab folder.
 
 
 ## Usage

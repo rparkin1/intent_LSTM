@@ -1,4 +1,5 @@
 import numpy as np
+import os
 
 def createVocabulary(input_path, output_path, no_pad=False):
     if not isinstance(input_path, str):
@@ -6,6 +7,7 @@ def createVocabulary(input_path, output_path, no_pad=False):
 
     if not isinstance(output_path, str):
         raise TypeError('output_path should be string')
+
 
     vocab = {}
     with open(input_path, 'r') as fd, \

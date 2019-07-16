@@ -70,6 +70,9 @@ full_train_path = os.path.join('./data',arg.dataset,arg.train_data_path)
 full_test_path = os.path.join('./data',arg.dataset,arg.test_data_path)
 full_valid_path = os.path.join('./data',arg.dataset,arg.valid_data_path)
 
+if not os.path.exists(arg.vocab_path):
+    os.mkdir(arg.vocab_path)
+
 createVocabulary(os.path.join(full_train_path, arg.input_file), os.path.join(arg.vocab_path, 'in_vocab'))
 createVocabulary(os.path.join(full_train_path, arg.slot_file), os.path.join(arg.vocab_path, 'slot_vocab'))
 createVocabulary(os.path.join(full_train_path, arg.intent_file), os.path.join(arg.vocab_path, 'intent_vocab'))
